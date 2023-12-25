@@ -1,29 +1,64 @@
 class DoublyLinkedList<T> {
-    private Element<T> head;
+    private Element<T> first;
+    private Element<T> last;
 
     void push(T value) {
-        throw new UnsupportedOperationException("Please implement the DoublyLinkedList.push() method.");
+        Element<T> node = new Element<>(value, last, null);
+        if (last == null) {
+            first = node;
+        } else {
+            last.next = node;
+        }
+        last = node;
     }
 
     T pop() {
-        throw new UnsupportedOperationException("Please implement the DoublyLinkedList.pop() method.");
+        if (last == null) {
+            return null;
+        }
+        T result = last.value;
+        last = last.prev;
+        if (last == null) {
+            first = null;
+        } else {
+            last.next = null;
+        }
+        return result;
     }
 
     void unshift(T value) {
-        throw new UnsupportedOperationException("Please implement the DoublyLinkedList.unshift() method.");
+        Element<T> node = new Element<>(value, null, first);
+        if (first == null) {
+            last = node;
+        } else {
+            first.prev = node;
+        }
+        first = node;
     }
 
     T shift() {
-        throw new UnsupportedOperationException("Please implement the DoublyLinkedList.shift() method.");
+        if (first == null) {
+            return null;
+        }
+        T result = first.value;
+        first = first.next;
+        if (first == null) {
+            last = null;
+        } else {
+            first.prev = null;
+        }
+        return result;
     }
 
     private static final class Element<T> {
-        private final T value;
-        private Element<T> prev;
-        private Element<T> next;
+        final T value;
+        Element<T> prev;
+        Element<T> next;
 
         Element(T value, Element<T> prev, Element<T> next) {
-            throw new UnsupportedOperationException("Please implement the Element constructor.");
+            this.value = value;
+            this.prev = prev;
+            this.next = next;
         }
     }
 }

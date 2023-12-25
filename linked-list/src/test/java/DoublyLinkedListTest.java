@@ -1,4 +1,3 @@
-import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -14,7 +13,7 @@ public class DoublyLinkedListTest {
         assertThat(list.pop()).isEqualTo(7);
     }
 
-    @Ignore("Remove to run test")
+    //    @Ignore("Remove to run test")
     @Test
     public void pushAndPopRespectivelyAddsAndRemovesAtEndOfList() {
         DoublyLinkedList<Integer> list = new DoublyLinkedList<>();
@@ -26,7 +25,7 @@ public class DoublyLinkedListTest {
         assertThat(list.pop()).isEqualTo(11);
     }
 
-    @Ignore("Remove to run test")
+    //    @Ignore("Remove to run test")
     @Test
     public void shiftGetsAnElementFromTheList() {
         DoublyLinkedList<Integer> list = new DoublyLinkedList<>();
@@ -36,7 +35,7 @@ public class DoublyLinkedListTest {
         assertThat(list.shift()).isEqualTo(17);
     }
 
-    @Ignore("Remove to run test")
+    //    @Ignore("Remove to run test")
     @Test
     public void shiftGetsFirstElementFromTheList() {
         DoublyLinkedList<Integer> list = new DoublyLinkedList<>();
@@ -48,7 +47,7 @@ public class DoublyLinkedListTest {
         assertThat(list.shift()).isEqualTo(5);
     }
 
-    @Ignore("Remove to run test")
+    //    @Ignore("Remove to run test")
     @Test
     public void unshiftAddsElementAtStartOfTheList() {
         DoublyLinkedList<Integer> list = new DoublyLinkedList<>();
@@ -60,7 +59,7 @@ public class DoublyLinkedListTest {
         assertThat(list.shift()).isEqualTo(23);
     }
 
-    @Ignore("Remove to run test")
+    //    @Ignore("Remove to run test")
     @Test
     public void popPushShiftUnshiftCanBeUsedInAnyOrder() {
         DoublyLinkedList<String> list = new DoublyLinkedList<>();
@@ -82,7 +81,7 @@ public class DoublyLinkedListTest {
         assertThat(list.shift()).isEqualTo("three");
     }
 
-    @Ignore("Remove to run test")
+    //    @Ignore("Remove to run test")
     @Test
     public void poppingToEmptyDoesNotBreakTheList() {
         DoublyLinkedList<Integer> list = new DoublyLinkedList<>();
@@ -96,7 +95,7 @@ public class DoublyLinkedListTest {
         assertThat(list.pop()).isEqualTo(47);
     }
 
-    @Ignore("Remove to run test")
+    //    @Ignore("Remove to run test")
     @Test
     public void shiftingToEmptyDoesNotBreakTheList() {
         DoublyLinkedList<Integer> list = new DoublyLinkedList<>();

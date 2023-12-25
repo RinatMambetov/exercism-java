@@ -2,6 +2,9 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="anagram" target="17" />
+      <module name="anagram.main" target="17" />
+      <module name="anagram.test" target="17" />
       <module name="annalyns-infiltration" target="19" />
       <module name="annalyns-infiltration.main" target="19" />
       <module name="annalyns-infiltration.test" target="19" />
@@ -38,12 +41,18 @@
       <module name="football-match-reports" target="19" />
       <module name="football-match-reports.main" target="19" />
       <module name="football-match-reports.test" target="19" />
+      <module name="isogram" target="17" />
+      <module name="isogram.main" target="17" />
+      <module name="isogram.test" target="17" />
       <module name="karls-languages" target="19" />
       <module name="karls-languages.main" target="19" />
       <module name="karls-languages.test" target="19" />
       <module name="lasagna" target="19" />
       <module name="lasagna.main" target="19" />
       <module name="lasagna.test" target="19" />
+      <module name="linked-list" target="17" />
+      <module name="linked-list.main" target="17" />
+      <module name="linked-list.test" target="17" />
       <module name="log-levels" target="19" />
       <module name="log-levels.main" target="19" />
       <module name="log-levels.test" target="19" />
@@ -56,6 +65,9 @@
       <module name="need-for-speed" target="19" />
       <module name="need-for-speed.main" target="19" />
       <module name="need-for-speed.test" target="19" />
+      <module name="pig-latin" target="17" />
+      <module name="pig-latin.main" target="17" />
+      <module name="pig-latin.test" target="17" />
       <module name="queen-attack" target="19" />
       <module name="queen-attack.main" target="19" />
       <module name="queen-attack.test" target="19" />
